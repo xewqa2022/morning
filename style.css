@@ -1,0 +1,284 @@
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:1;cursor:pointer}
+.w3-half img:hover{opacity:0.8}
+/* buttons */
+#share a {
+  padding: 10px 20px 10px 20px;
+       display: inline-block;
+        margin-top: 15px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #f44336;
+  opacity: 0.5;
+  transition: opacity 0.15s linear;
+  border: 1px solid  #f44336;
+}
+
+#share a:hover {
+  opacity: 1;
+  border: 1px solid  #fff;
+  
+  
+}
+
+/* icons */
+/* home */
+.grid-container {
+  display: grid;
+  justify-content: space-around;
+  justify-items: center;
+  flex: 1 0 auto;
+  grid-template-areas: "navbar navbar navbar"
+  "header header header"
+  "signup signup signup"
+  "content content content"
+  "media media media"
+  "autoship autoship autoship"
+  "section1 section2 section3"
+  "footer footer footer";
+  font-family: 'Bruno Ace SC', cursive;
+
+}
+
+#nav-bar {
+  height: 75px;
+  text-align: right;
+  width: 100%;
+}
+
+.nav-bar {
+  grid-area: navbar;
+}
+
+
+
+
+
+.media {
+  grid-area: media;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  background-color: linen;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#tea-media {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.autoship {
+  grid-area: autoship;
+  margin-top: 0px;
+}
+
+.section1 {
+  grid-area: section1;
+  flex-wrap: wrap;  
+  margin: 10px;
+  padding: 0;
+  width: 35%; 
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #F43515
+}
+.grid-item img{width: 100%;}
+.grid-item a{text-decoration: none;color: #000}
+.section2 {
+  grid-area: section2;  
+  margin: 10px;
+  padding: 0;
+  width: 35%;  
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #000
+}
+
+.section3 {
+  grid-area: section3; 
+  margin: 10px;
+  padding: 0;
+  width: 35%;  
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #000
+}
+
+.grid-item {
+  text-align: center;
+}
+
+body, html {
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  color: black;
+  text-decoration: solid;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0px 25px 0px 0px;
+  display: flex;
+}
+
+nav {
+  display: inline-block;
+  list-style-type: none;  
+  margin: 10px 0px 0px 0px;
+}
+
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav a {
+  display: block;
+  line-height: 3em;
+  text-transform: uppercase;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#top-logo {
+  height: 75px;
+  width: auto;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #F43515;
+  color: white;
+  padding: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+
+
+#header-img {
+  margin: 0;
+  width: 100%;
+}
+
+
+.nav-link {
+  display: flex;
+  align-items: stretch;
+  margin: 10px 0 0 25px;
+}
+
+  .footer {
+    grid-area: footer;
+    text-align: center;
+    width: 100%;
+  }
+  
+   footer {
+    text-align: right;
+    font-weight: bold;
+    width: auto;
+    padding: 10px;
+    background-color: lightgray;
+    color: brown;
+   }
+
+  .copyright {
+    grid-area: copyright;
+    text-align: center;
+  }
+
+  #autoship-title {
+    font-weight: bold;
+    margin: 20px 30px 0px 30px;
+    font-size: 2em;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  #autoship-desc {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    margin: 0px 10px 20px 10px;
+  }
+
+/* Media Queries */
+
+@media (max-width: 500px){
+  .nav-link {
+    font-size: .4em;
+  }
+  #top-header {
+    font-size: 2em;
+  }
+  .grid-container {
+    max-width: 100vh;
+    }
+  }
+@media (max-width: 700px){
+  #top-header {
+    font-size: 2em;
+  }
+  .content {
+    font-size: .75em;
+  }
+  #icon-img {
+    width: 75px;
+    height: 75px;
+  }
+  .section1, .section2, .section3, {
+    width: 90%;
+  }
+  .options {
+    font-size: .75em;
+    text-align: left;
+    margin-right: 10px;
+  }
+  #incl-text, #month, #price {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1400px){
+  .section1, .section2, .section3 {
+    width: 90%;
+  }
+  .options {
+    font-size: 1em;
+    text-align: left;
+    margin-right: 10px;
+  }
+  #incl-text, #month, #price {
+    font-size: 1.5em;
+  }
+}
+.pripolicy p{font-family: 'Quicksand', sans-serif;}
